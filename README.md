@@ -1,3 +1,5 @@
 # github_leetCode
-两数之和 TwoSum
-数字反转 ReverseNum
+简单：
+1、两数之和 TwoSum
+2、数字反转 ReverseNum
+3、回文数 IsPalindrome
