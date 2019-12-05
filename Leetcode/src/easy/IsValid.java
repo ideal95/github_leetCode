@@ -23,8 +23,8 @@ public class IsValid {
         this.map.put('}','{');
         this.map.put(']','[');
     }
-//    暴力执法 、贼慢
 
+//    暴力执法 、贼慢
     public boolean method1(String s) {
         if(s.length()==0){
             return true;
@@ -60,8 +60,8 @@ public class IsValid {
         return false;
     }
 
+
     public static void main(String[] args) {
-        Stack<Character> stack=new Stack<>();
-        System.out.println(stack.empty());
+
     }
 }
