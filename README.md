@@ -1,5 +1,9 @@
 # github_leetCode
-简单：
+easy：
 1、两数之和 TwoSum
-2、数字反转 ReverseNum
-3、回文数 IsPalindrome
+7、数字反转 ReverseNum
+9、回文数 IsPalindrome
+20、有效的括号 IsValid
+26、删除数组中的重复项 RemoveDuplicates
+27、移除元素 RemoveElement
+283、移动零 MoveZeros
