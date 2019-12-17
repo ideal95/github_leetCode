@@ -1,9 +1,9 @@
 package easy;
 
 /**
- * @Description:
- * @Author: lixiang
- * @Date: 2019-12-4 17:19
+ *
+ * @author  : lixiang
+ * @date : 2019-12-4 17:19
  * String a="asdsadsadsadsadsadsad"
  * a-z 获取第一个不重复的字母
  *

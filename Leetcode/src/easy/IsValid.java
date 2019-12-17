@@ -1,13 +1,12 @@
 package easy;
 
 import java.util.HashMap;
-import java.util.Map;
 import java.util.Stack;
 
 /**
- * @Description:
- * @Author: lixiang
- * @Date: 2019-12-4 18:02
+ *
+ * @author : lixiang
+ * @date : 2019-12-4 18:02
  * leetcode:20 有效的括号
  * 给定一个只包括 '('，')'，'{'，'}'，'['，']' 的字符串，判断字符串是否有效。
  * 有效字符串需满足：
@@ -54,14 +53,13 @@ public class IsValid {
                 char ele=stack.empty()? '#':stack.pop();
                 if(ele!=this.map.get(s.charAt(i))){
                         stack.push(s.charAt(i));
+                    return false;
                 }
+            } else {
+                stack.push(s.charAt(i));
             }
         }
-        return false;
+        return stack.isEmpty();
     }
 
-
-    public static void main(String[] args) {
-
-    }
 }
