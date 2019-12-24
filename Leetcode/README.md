@@ -12,6 +12,7 @@
 + 58、最后一个单词的长度 LengthOfLastWord
 + 83、删除排序链表中的重复元素 DeleteDuplicates
 + 88、合并两个有序整数数组 MergeArray
++ 136、只出现一次的数字 SingleNumber
 + 283、移动零 MoveZeros
 + 387、字符串中的第一个唯一字符 FirstWord （一个概念）
 + 412、Fizz Buzz FizzBuzz
