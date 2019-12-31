@@ -17,3 +17,5 @@
 + 283、移动零 MoveZeros
 + 387、字符串中的第一个唯一字符 FirstWord （一个概念）
 + 412、Fizz Buzz FizzBuzz
++ 645、错误的集合 FindErrorNums
++ 925、长按输入 IsLongPressedName

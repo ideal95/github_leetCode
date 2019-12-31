@@ -29,7 +29,7 @@ public class StrStr {
      * @return
      */
     public int strStr(String haystack, String needle) {
-        if(needle.length()==0||needle==null){
+        if (needle == null || needle.length() == 0) {
             return 0;
         }
         for(int i=0;i<=haystack.length()-needle.length();i++){
@@ -38,5 +38,12 @@ public class StrStr {
             }
         }
         return -1;
+    }
+
+    public static void main(String[] args) {
+        char[] chars = new char[1];
+        int a = 9;
+        chars[0] = (char) (a + '0');
+        System.out.println(chars[0]);
     }
 }
