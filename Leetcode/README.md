@@ -14,6 +14,7 @@
 + 88、合并两个有序整数数组 MergeArray
 + 136、只出现一次的数字 SingleNumber
 + 217、存在重复元素 ContainsDuplicate
++ 268、缺失数字 MissingNumber
 + 283、移动零 MoveZeros
 + 387、字符串中的第一个唯一字符 FirstWord （一个概念）
 + 412、Fizz Buzz FizzBuzz
