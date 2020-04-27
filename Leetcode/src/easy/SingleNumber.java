@@ -19,12 +19,16 @@ package easy;
  * 输出: 4
  */
 public class SingleNumber {
-    //    解题思路亦或的方法;
+    /**
+     * 解题思路亦或的方法;
+     */
     public int singleNumber(int[] nums) {
         int a = 0;
         for (int num : nums) {
+//            ^异或 相同为false 不同为true
             a ^= num;
         }
         return a;
     }
+
 }

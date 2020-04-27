@@ -25,7 +25,12 @@ package easy;
  * 输出: 0
  */
 public class SearchInsert {
-    //    第一直觉 简单粗暴 直接循环比较 当nums[i]>=target的时候 直接返回i 就是需要插入的下标；如果遍历完都没找到，那数组的最后一个下标加一就是插入的地方
+    /**
+     * 第一直觉 简单粗暴 直接循环比较
+     * 当nums[i]>=target的时候 直接返回i
+     * 就是需要插入的下标；如果遍历完都没找到，
+     * 那数组的最后一个下标加一就是插入的地方
+     */
     public int searchInsert(int[] nums, int target) {
         int index = 0;
         for (int i = 0; i < nums.length; i++) {
@@ -38,7 +43,9 @@ public class SearchInsert {
         return index;
     }
 
-    //    二分法
+    /**
+     * 二分法
+     */
     public int searchInsert2(int[] nums, int target) {
         int left = 0;
         int right = nums.length;

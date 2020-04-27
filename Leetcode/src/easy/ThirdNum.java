@@ -30,10 +30,12 @@ import java.util.TreeSet;
  */
 @SuppressWarnings("unused")
 public class ThirdNum {
+    /**
+     * treeSet 可以对元素对象进行排序;
+     * 因此 treeSet中的元素是有序的 只要保留三个元素在其中就可以了
+     * last()是最大的一个数 first()是最小的数
+     */
 
-    // treeset 可以对元素对象进行排序;
-//    因此 treeset中的元素是有序的 只要保留三个元素在其中就可以了
-//    last()是最大的一个数 first()是最小的数
     public int c(int[] nums) {
         TreeSet<Integer> set = new TreeSet<>();
         if (nums == null || nums.length == 0) {

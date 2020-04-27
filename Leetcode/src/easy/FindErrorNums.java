@@ -64,7 +64,9 @@ public class FindErrorNums {
         return new int[]{a, b};
     }
 
-    //排序建厂相邻两个数是否相等
+    /*
+    排序建厂相邻两个数是否相等
+     */
     public int[] method3(int[] nums) {
         int a = -1;
         int b = 1;

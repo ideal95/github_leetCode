@@ -1,5 +1,7 @@
 package easy;
 
+import java.util.Arrays;
+
 /**
  * @author : lixiang
  * @date : 2019-12-18 17:06
@@ -18,10 +20,16 @@ package easy;
  * 输出: [1,2,2,3,5,6]
  */
 public class MergeArray {
-    //不需要使用额外的空间  从后往前读取
-//    时间复杂度O(m+n) 空间复杂度O(1)
+
+    /**
+     * 不需要使用额外的空间
+     * 从后往前读取时间复杂度O(m+n) 空间复杂度O(1)
+     */
+
     public void merge(int[] nums1, int m, int[] nums2, int n) {
+//        nums1的下标
         int n1 = m - 1;
+//        num2的下标
         int n2 = n - 1;
         int n3 = m + n - 1;
         while (n1 >= 0 && n2 >= 0) {
@@ -30,4 +38,14 @@ public class MergeArray {
 //        把nums2中的没有塞入nums1的数组塞入
         System.arraycopy(nums2, 0, nums1, 0, n2 + 1);
     }
+
+    /**
+     * 直接copy 然后排序
+     */
+    public void merge2(int[] nums1, int m, int[] nums2, int n) {
+        System.arraycopy(nums2, 0, nums1, m, n);
+        Arrays.sort(nums1);
+    }
+
+
 }

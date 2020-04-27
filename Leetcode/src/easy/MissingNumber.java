@@ -25,8 +25,12 @@ import java.util.Set;
  */
 @SuppressWarnings("unused")
 public class MissingNumber {
-    //思路：1、判断长度是否为1 如果是1就判断存在的元素是0还是1
-//      2、排序遍历  找不到就是n缺失
+    /**
+     * 思路：
+     * 1、判断长度是否为1 如果是1就判断存在的元素是0还是1
+     * 2、排序遍历  找不到就是n缺失
+     */
+
     public int method(int[] nums) {
         Arrays.sort(nums);
         if (nums.length == 1) {
@@ -40,9 +44,12 @@ public class MissingNumber {
         return nums.length;
     }
 
-    //1、先排序
-//    2、判断头尾是否符合
-//    3、遍历 与上一个元素比较
+    /**
+     * 1、先排序
+     * 2、判断头尾是否符合
+     * 3、遍历 与上一个元素比较
+     */
+
     public int method2(int[] nums) {
         Arrays.sort(nums);
         if (nums[0] != 0) {
@@ -59,7 +66,10 @@ public class MissingNumber {
         return -1;
     }
 
-    // hash表中加入 遍历 不存在的元素 就是那一个元素
+    /**
+     * hash表中加入 遍历 不存在的元素 就是那一个元素
+     * hashSet 不重复
+     */
     public int method3(int[] nums) {
         Set<Integer> set = new HashSet<>();
         for (int num : nums) {

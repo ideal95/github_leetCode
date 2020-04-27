@@ -5,8 +5,8 @@ package easy;
  */
 public class ReverseNum {
 
-    /*
-    解决方案 来自leetCode解析
+    /**
+     * 解决方案 来自leetCode解析
      */
     public int method1(int x) {
 //       新定义一个常量
@@ -21,11 +21,12 @@ public class ReverseNum {
         return (rs < Integer.MIN_VALUE || rs > Integer.MAX_VALUE) ? 0 : (int) rs;
     }
 
-    /*
-    思路:int转String String转char 数组
-    1、判断正负
-    2、StringBuilder append方法
-    3、try的理由 转int可能溢出；
+    /**
+     * 思路:
+     * int转String String转char 数组
+     * 1、判断正负
+     * 2、StringBuilder append方法
+     * 3、try的理由 转int可能溢出；
      */
     public int method2(int x) {
         String str = String.valueOf(x);
@@ -39,15 +40,14 @@ public class ReverseNum {
                 for (int i = length; i > 0; i--) {
                     sb.append(chars[i - 1]);
                 }
-                a = Integer.parseInt(sb.toString());
             } else {
                 sb = new StringBuilder("-");
                 sb.append("-");
                 for (int i = length; i > 1; i--) {
                     sb.append(chars[i - 1]);
                 }
-                a = Integer.parseInt(sb.toString());
             }
+            a = Integer.parseInt(sb.toString());
         } catch (Exception e) {
             return 0;
         }
