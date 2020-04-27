@@ -40,5 +40,6 @@ public class StrArr {
             }
             System.out.println(sb.toString());
         }
+        sc.close();
     }
 }
