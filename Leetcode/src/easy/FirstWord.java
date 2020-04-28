@@ -1,12 +1,12 @@
 package easy;
 
+import java.util.Scanner;
+
 /**
- *
- * @author  : lixiang
+ * @author : lixiang
  * @date : 2019-12-4 17:19
  * String a="asdsadsadsadsadsadsad"
  * a-z 获取第一个不重复的字母
- *
  */
 public class FirstWord {
 
@@ -33,6 +33,24 @@ public class FirstWord {
 
 
     public static void main(String[] args) {
-        System.out.println(getFirstWord("abcde"));
+        Scanner sc = new Scanner(System.in);
+        while (sc.hasNext()) {
+            String str = sc.next();
+            int[] nums = new int[26];
+            for (int i = 0; i < str.length(); i++) {
+                char c = str.charAt(i);
+                int n = (int) (c - 'a');
+                nums[n]++;
+            }
+            for (int i = 0; i < str.length(); i++) {
+                char c = str.charAt(i);
+                int n = (int) (c - 'a');
+                if (nums[n] == 1) {
+                    System.out.println(c);
+                    return;
+                }
+            }
+            System.out.println("-1");
+        }
     }
 }
