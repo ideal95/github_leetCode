@@ -1,5 +1,7 @@
 package easy;
 
+import java.util.Scanner;
+
 /**
  * @author : lixiang
  * @date : 2019-12-16 10:23
@@ -32,4 +34,12 @@ public class LengthOfLastWord {
         return s.length() - index - 1;
     }
 
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        while (sc.hasNext()) {
+            String str = sc.nextLine();
+            int index = str.lastIndexOf(" ");
+            System.out.println(str.length() - index - 1);
+        }
+    }
 }
